@@ -65,7 +65,7 @@ This repository contains 6 HTML tutorial assessments demonstrating various HTML 
     </main>
 
     <footer>
-        <p>&copy; 2025 name - TCSS 460</p>
+        <p>&copy; 2025 Ryder DeBack - TCSS 460</p>
     </footer>
 </body>
 </html>
@@ -118,7 +118,7 @@ This repository contains 6 HTML tutorial assessments demonstrating various HTML 
     </main>
 
     <footer>
-        <p>&copy; 2025 name - TCSS 460</p>
+        <p>&copy; 2025 Ryder DeBack - TCSS 460</p>
     </footer>
 </body>
 </html>
@@ -165,7 +165,7 @@ This repository contains 6 HTML tutorial assessments demonstrating various HTML 
     </main>
 
     <footer>
-        <p>&copy; 2025 name - TCSS 460</p>
+        <p>&copy; 2025 Ryder DeBack - TCSS 460</p>
     </footer>
 </body>
 </html>
@@ -207,7 +207,7 @@ This repository contains 6 HTML tutorial assessments demonstrating various HTML 
     </main>
 
     <footer>
-        <p>&copy; 2025 name - TCSS 460</p>
+        <p>&copy; 2025 Ryder DeBack - TCSS 460</p>
     </footer>
 </body>
 </html>
@@ -248,7 +248,7 @@ This repository contains 6 HTML tutorial assessments demonstrating various HTML 
     </main>
 
     <footer>
-        <p>&copy; 2025 name - TCSS 460</p>
+        <p>&copy; 2025 Ryder DeBack - TCSS 460</p>
     </footer>
 </body>
 </html>
@@ -301,7 +301,7 @@ This repository contains 6 HTML tutorial assessments demonstrating various HTML 
     </main>
 
     <footer>
-        <p>&copy; 2025 name - TCSS 460</p>
+        <p>&copy; 2025 Ryder DeBack - TCSS 460</p>
     </footer>
 </body>
 </html>
