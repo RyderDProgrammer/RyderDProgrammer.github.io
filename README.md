@@ -1,7 +1,3 @@
-# HTML Tutorial Assessments
-
-Website to display HTML Tutorial for TCSS 460 Assignment
-
 ## Overview
 
 This repository contains 6 HTML tutorial assessments demonstrating various HTML concepts and techniques. All assessment code is displayed below for easy viewing.
