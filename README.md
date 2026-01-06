@@ -23,41 +23,12 @@ A collection of HTML tutorial assessments demonstrating various HTML concepts an
 
 ## Assessments
 
-### Assessment 1: HTML Text Basics
+### Assessment 1: Temp page
 
-Basic HTML structure, headings, paragraphs, sections, lists.
+Temporary Page
 
-- [View Page](pages/assessment1.html)
+- [View Page](pages/temp.html)
 
-### Assessment 2: Advanced HTML Text
-
-Text semantics, abbreviations, subscript/superscript, dates.
-
-- [View Page](pages/assessment2.html)
-
-### Assessment 3: Links
-
-Hyperlinks, email links, external resources.
-
-- [View Page](pages/assessment3.html)
-
-### Assessment 4: Images
-
-Image embedding and accessibility attributes.
-
-- [View Page](pages/assessment4.html)
-
-### Assessment 5: Audio and Video
-
-Multimedia embedding with audio controls.
-
-- [View Page](pages/assessment5.html)
-
-### Assessment 6: Forms and Buttons
-
-Form inputs, labels, and buttons.
-
-- [View Page](pages/assessment6.html)
 
 ## Technologies Used
 
