@@ -8,12 +8,7 @@ A collection of HTML tutorial assessments demonstrating various HTML concepts an
 .
 ├── index.html              # Main landing page
 ├── pages/                  # Individual assessment pages
-│   ├── assessment1.html    # HTML text basics
-│   ├── assessment2.html    # Advanced HTML text
-│   ├── assessment3.html    # Links
-│   ├── assessment4.html    # Images
-│   ├── assessment5.html    # Audio and Video
-│   └── assessment6.html    # Forms and Buttons
+│   ├── temp.html    # HTML text basics
 ├── assets/
 │   ├── css/
 │   │   └── styles.css      # Global styles
