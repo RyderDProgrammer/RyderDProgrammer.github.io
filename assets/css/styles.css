@@ -16,9 +16,14 @@
     --header-color: #ffffff;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     background-image: var(--bg-image);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -27,6 +32,7 @@ body {
     color: var(--text-color);
     font-family: Arial, sans-serif;
     transition: background-image 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
 }
 
 header h1 {
