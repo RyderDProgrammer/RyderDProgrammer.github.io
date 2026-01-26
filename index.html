@@ -24,6 +24,16 @@
         <p>&copy; 2026 Ryder DeBack</p>
     </footer>
 
+    <div class="taskbar">
+        <div class="start-button">
+            <span class="start-icon">🪟</span>
+            <span class="start-text">Menu</span>
+        </div>
+        <div class="taskbar-clock" id="taskbarClock">
+            <div class="clock-time"></div>
+        </div>
+    </div>
+
     <script>
         // Theme toggle functionality
         const themeToggle = document.getElementById('themeToggle');
@@ -52,6 +62,19 @@
                 localStorage.setItem('theme', 'dark');
             }
         });
+
+        // Taskbar clock functionality
+        function updateClock() {
+            const clockElement = document.querySelector('.clock-time');
+            const now = new Date();
+            const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            const dateString = now.toLocaleDateString([], { month: '2-digit', day: '2-digit', year: 'numeric' });
+            clockElement.textContent = `${timeString} ${dateString}`;
+        }
+
+        // Update clock immediately and then every second
+        updateClock();
+        setInterval(updateClock, 1000);
     </script>
 </body>
 </html>
