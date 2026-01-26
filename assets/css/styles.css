@@ -1,21 +1,65 @@
+/* Light mode variables (default) */
+:root {
+    --bg-image: url('../images/background.png');
+    --text-color: #333333;
+    --link-color: #1976d2;
+    --link-hover: #1565c0;
+    --header-color: #1a1a1a;
+}
+
+/* Dark mode variables */
+[data-theme="dark"] {
+    --bg-image: url('../images/background-dark.png');
+    --text-color: #ffffff;
+    --link-color: #64b5f6;
+    --link-hover: #90caf9;
+    --header-color: #ffffff;
+}
+
 body {
-    background-image: url('../images/background.png');
+    background-image: var(--bg-image);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
     padding: 20px;
-    color: #ffffff;
+    color: var(--text-color);
     font-family: Arial, sans-serif;
+    transition: background-image 0.3s ease, color 0.3s ease;
+}
+
+header h1 {
+    color: var(--header-color);
 }
 
 a {
-    color: #64b5f6;
+    color: var(--link-color);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #90caf9;
+    color: var(--link-hover);
     text-decoration: underline;
+}
+
+/* Theme toggle button styles */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
 }

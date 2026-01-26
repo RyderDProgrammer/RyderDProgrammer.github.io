@@ -7,6 +7,8 @@
     <title>Ryder DeBack Personal Site</title>
 </head>
 <body>
+    <button class="theme-toggle" id="themeToggle">🌙 Dark Mode</button>
+
     <header>
         <h1>Ryder DeBack</h1>
     </header>
@@ -21,5 +23,35 @@
     <footer>
         <p>&copy; 2026 Ryder DeBack</p>
     </footer>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const htmlElement = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+
+        // Apply the saved theme on page load
+        if (currentTheme === 'dark') {
+            htmlElement.setAttribute('data-theme', 'dark');
+            themeToggle.textContent = '☀️ Light Mode';
+        }
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            const theme = htmlElement.getAttribute('data-theme');
+
+            if (theme === 'dark') {
+                htmlElement.removeAttribute('data-theme');
+                themeToggle.textContent = '🌙 Dark Mode';
+                localStorage.setItem('theme', 'light');
+            } else {
+                htmlElement.setAttribute('data-theme', 'dark');
+                themeToggle.textContent = '☀️ Light Mode';
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
 </body>
 </html>
