@@ -1,0 +1,17 @@
+.taskbarClock {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  background: linear-gradient(to bottom, #0e8df0 0%, #1698f5 10%, #0c6dcd 90%, #0a5db5 100%);
+  border-left: 1px solid #0a5aaa;
+  border-right: 1px solid #0a5aaa;
+  margin-right: 2px;
+}
+
+.clockTime {
+  font-family: 'Tahoma', Arial, sans-serif;
+  font-size: 11px;
+  color: white;
+  font-weight: normal;
+}

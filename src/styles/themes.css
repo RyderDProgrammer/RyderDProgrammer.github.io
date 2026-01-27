@@ -1,0 +1,17 @@
+/* Light mode variables (default) */
+:root {
+  --bg-image: url('/images/background.png');
+  --text-color: #333333;
+  --link-color: #1976d2;
+  --link-hover: #1565c0;
+  --header-color: #1a1a1a;
+}
+
+/* Dark mode variables */
+[data-theme="dark"] {
+  --bg-image: url('/images/background-dark.png');
+  --text-color: #ffffff;
+  --link-color: #64b5f6;
+  --link-hover: #90caf9;
+  --header-color: #ffffff;
+}

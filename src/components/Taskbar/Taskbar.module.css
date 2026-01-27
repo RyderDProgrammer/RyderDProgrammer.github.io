@@ -1,0 +1,14 @@
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #1941a5 100%);
+  border-top: 1px solid #0831d9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}

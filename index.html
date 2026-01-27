@@ -1,80 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ryder DeBack Personal Site</title>
-</head>
-<body>
-    <button class="theme-toggle" id="themeToggle">🌙 Dark Mode</button>
-
-    <header>
-        <h1>Ryder DeBack</h1>
-    </header>
-
-    <main>
-        <h2>Pages</h2>
-        <ul>
-            <li><a href="pages/temp.html">Temporary placeholder</a></li>
-        </ul>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Ryder DeBack</p>
-    </footer>
-
-    <div class="taskbar">
-        <div class="start-button">
-            <span class="start-icon">🪟</span>
-            <span class="start-text">Menu</span>
-        </div>
-        <div class="taskbar-clock" id="taskbarClock">
-            <div class="clock-time"></div>
-        </div>
-    </div>
-
     <script>
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('themeToggle');
-        const htmlElement = document.documentElement;
-
-        // Check for saved theme preference or default to light mode
-        const currentTheme = localStorage.getItem('theme') || 'light';
-
-        // Apply the saved theme on page load
-        if (currentTheme === 'dark') {
-            htmlElement.setAttribute('data-theme', 'dark');
-            themeToggle.textContent = '☀️ Light Mode';
-        }
-
-        // Toggle theme on button click
-        themeToggle.addEventListener('click', () => {
-            const theme = htmlElement.getAttribute('data-theme');
-
-            if (theme === 'dark') {
-                htmlElement.removeAttribute('data-theme');
-                themeToggle.textContent = '🌙 Dark Mode';
-                localStorage.setItem('theme', 'light');
-            } else {
-                htmlElement.setAttribute('data-theme', 'dark');
-                themeToggle.textContent = '☀️ Light Mode';
-                localStorage.setItem('theme', 'dark');
-            }
-        });
-
-        // Taskbar clock functionality
-        function updateClock() {
-            const clockElement = document.querySelector('.clock-time');
-            const now = new Date();
-            const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-            const dateString = now.toLocaleDateString([], { month: '2-digit', day: '2-digit', year: 'numeric' });
-            clockElement.textContent = `${timeString} ${dateString}`;
-        }
-
-        // Update clock immediately and then every second
-        updateClock();
-        setInterval(updateClock, 1000);
+      // Apply theme before React loads to prevent flash
+      const theme = localStorage.getItem('theme');
+      if (theme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
     </script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

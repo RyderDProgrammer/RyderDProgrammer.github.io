@@ -1,0 +1,38 @@
+/* Import theme variables */
+@import './themes.css';
+
+/* Global resets */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  background-image: var(--bg-image);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  transition: background-image 0.3s ease, color 0.3s ease;
+  box-sizing: border-box;
+  padding: 20px 20px 50px 20px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}

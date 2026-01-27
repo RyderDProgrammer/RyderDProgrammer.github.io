@@ -1,0 +1,30 @@
+.startButton {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px 0 5px;
+  background: linear-gradient(to bottom, #5eac56 0%, #3c873c 50%, #2d6e2d 51%, #5eac56 100%);
+  border: 1px outset #7fb977;
+  border-radius: 0 8px 8px 0;
+  margin-left: 2px;
+  cursor: pointer;
+  font-family: 'Tahoma', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-style: italic;
+}
+
+.startButton:hover {
+  background: linear-gradient(to bottom, #6ec065 0%, #4a9d4a 50%, #3a8539 51%, #6ec065 100%);
+}
+
+.startButton:active {
+  border: 1px inset #5a9152;
+}
+
+.startIcon {
+  font-size: 16px;
+  margin-right: 3px;
+}
