@@ -1,13 +1,11 @@
 import styles from './StartButton.module.css';
 
-export function StartButton() {
-  const handleClick = () => {
-    // Future: Open start menu
-    console.log('Start button clicked');
-  };
-
+export function StartButton({ onClick, isActive }) {
   return (
-    <button className={styles.startButton} onClick={handleClick}>
+    <button
+      className={`${styles.startButton} ${isActive ? styles.active : ''}`}
+      onClick={onClick}
+    >
       <span className={styles.startIcon}>🪟</span>
       <span className={styles.startText}>Menu</span>
     </button>
