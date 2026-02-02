@@ -1,0 +1,66 @@
+.window {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  flex-direction: column;
+  animation: fadeIn 0.15s ease-out;
+  overflow: hidden;
+}
+
+.window.active {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.closeButton {
+  position: fixed;
+  top: 5px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background: rgba(232, 17, 35, 0.9);
+  border: 2px solid #c50f1f;
+  color: white;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.2s;
+  z-index: 10000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.closeButton:hover {
+  background: #f1707a;
+  transform: scale(1.1);
+}
+
+.closeButton:active {
+  background: #c50f1f;
+  transform: scale(0.95);
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}

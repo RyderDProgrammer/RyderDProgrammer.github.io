@@ -1,19 +1,22 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './contexts/ThemeContext';
+import { WindowProvider } from './contexts/WindowContext';
 import { Layout } from './components/Layout/Layout';
-import { Home } from './pages/Home/Home';
-import { Projects } from './pages/Projects/Projects';
 
 function App() {
   return (
     <ThemeProvider>
       <Router>
-        <Layout>
+        <WindowProvider>
+          <Layout />
+          {/* Routes kept for URL synchronization */}
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/" element={null} />
+            <Route path="/about" element={null} />
+            <Route path="/about-site" element={null} />
+            <Route path="/projects" element={null} />
           </Routes>
-        </Layout>
+        </WindowProvider>
       </Router>
     </ThemeProvider>
   );
