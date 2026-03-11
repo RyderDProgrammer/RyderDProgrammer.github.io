@@ -1,12 +1,30 @@
 .home {
   padding: 20px 0;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--page-text-color);
+  text-shadow: var(--page-text-shadow);
 }
 
-.pageList {
-  list-style-type: none;
+.home p {
+  line-height: 1.6;
+  margin: 10px 0 20px;
+}
+
+.helpList {
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.pageList li {
-  margin: 10px 0;
+.helpList li {
+  padding: 8px 0;
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.helpList li:last-child {
+  border-bottom: none;
 }

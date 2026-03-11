@@ -1,5 +1,7 @@
 .aboutSite {
   padding: 20px 0;
+  color: var(--page-text-color);
+  text-shadow: var(--page-text-shadow);
 }
 
 .content {
@@ -14,7 +16,6 @@
 .content h3 {
   margin-top: 25px;
   margin-bottom: 10px;
-  color: var(--header-color);
 }
 
 .content ul {

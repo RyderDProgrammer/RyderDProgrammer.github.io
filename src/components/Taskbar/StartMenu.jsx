@@ -40,7 +40,7 @@ export function StartMenu({ isOpen, onClose }) {
     <div ref={menuRef} className={styles.startMenu}>
       <div className={styles.menuContent}>
         <button className={styles.menuItem} onClick={() => handleNavigation('/', 'Home')}>
-          <span className={styles.menuIcon}>📄</span>
+          <span className={styles.menuIcon}>🏠</span>
           <span className={styles.menuLabel}>Home</span>
         </button>
         <button className={styles.menuItem} onClick={() => handleNavigation('/about', 'About Me')}>

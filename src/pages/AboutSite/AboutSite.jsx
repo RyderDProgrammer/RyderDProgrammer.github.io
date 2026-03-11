@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styles from './AboutSite.module.css';
 
 export function AboutSite() {
@@ -31,10 +30,13 @@ export function AboutSite() {
           The site is hosted on GitHub Pages and continuously updated with new
           projects and content.
         </p>
+
+        <h3>Development</h3>
+        <p>
+          This site was built with the assistance of Claude, an AI assistant made by Anthropic.
+          Claude helped design and implement the windowing system, component architecture, and overall layout.
+        </p>
       </div>
-      <p>
-        <Link to="/">Back to Home</Link>
-      </p>
     </div>
   );
 }

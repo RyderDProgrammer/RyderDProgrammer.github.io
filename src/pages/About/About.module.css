@@ -1,12 +1,29 @@
 .about {
-  padding: 20px 0;
+  padding: 10px 0;
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--page-text-color);
+  text-shadow: var(--page-text-shadow);
+}
+
+.body {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.headshot {
+  width: 340px;
+  flex-shrink: 0;
+  border-radius: 8px;
 }
 
 .content {
-  margin: 20px 0;
-  line-height: 1.6;
+  margin: 8px 0;
+  line-height: 1.5;
+  font-size: 1.035rem;
 }
 
 .content p {
-  margin: 15px 0;
+  margin: 8px 0;
 }

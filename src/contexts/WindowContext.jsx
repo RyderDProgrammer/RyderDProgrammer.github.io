@@ -85,15 +85,18 @@ export function WindowProvider({ children }) {
     });
   }, [nextZIndex, navigate]);
 
-  // Open initial window based on current route
+  // Open initial window based on current route (skip Home — it's always the desktop)
   useEffect(() => {
-    if (!initialized && windows.length === 0) {
+    if (!initialized) {
       const route = location.pathname;
-      const title = ROUTE_TITLES[route] || ROUTE_TITLES['/'];
-      openWindow(route, title);
+      if (route !== '/' && windows.length === 0) {
+        const title = ROUTE_TITLES[route] || 'Window';
+        openWindow(route, title);
+      }
       setInitialized(true);
     }
-  }, [initialized, windows.length, location.pathname, openWindow]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const closeWindow = useCallback((id) => {
     setWindows(prev => {
@@ -109,9 +112,9 @@ export function WindowProvider({ children }) {
           setActiveWindowId(nextWindow.id);
           navigate(nextWindow.route);
         } else {
-          // No windows left, open Home
+          // No windows left, return to desktop
           setActiveWindowId(null);
-          setTimeout(() => openWindow('/', 'Home'), 0);
+          navigate('/');
         }
       }
 

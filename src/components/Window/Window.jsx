@@ -38,8 +38,8 @@ export function Window({ id, route, title, zIndex, isActive }) {
       <button
         className={styles.closeButton}
         onClick={handleClose}
-        aria-label="Close and return to home"
-        title="Close"
+        aria-label="Close current tab"
+        title="Close current tab"
       >
         ✕
       </button>
