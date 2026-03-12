@@ -1,38 +1,49 @@
-# HTML Tutorial Assessments Portfolio
+# Ryder DeBack — Portfolio Site
 
-A collection of HTML tutorial assessments demonstrating various HTML concepts and techniques.
+Personal portfolio site for Ryder DeBack, built with a Windows XP-inspired desktop UI.
 
-## Project Structure
+Live site: [https://ryderdprogrammer.github.io](https://ryderdprogrammer.github.io)
 
-```text
-.
-├── index.html              # Main landing page
-├── pages/                  # Individual assessment pages
-│   ├── temp.html    # HTML text basics
-├── assets/
-│   ├── css/
-│   │   └── styles.css      # Global styles
-│   └── images/             # Image assets
-└── README.md
+## Features
+
+- Windows XP-style desktop with a taskbar, start menu, and windowing system
+- Light/dark mode toggle
+- Client-side routing with React Router (HashRouter)
+- Deployed via GitHub Pages
+
+## Pages
+
+- **Home** — Welcome screen and navigation guide
+- **About Me** — Background, work experience, and technical skills
+- **My Projects** — Links to GitHub projects with descriptions
+- **About the Site** — Tech stack and development notes
+
+## Tech Stack
+
+- React 18 + Vite
+- React Router DOM v6
+- CSS Modules
+- gh-pages for deployment
+
+## Development
+
+Install dependencies:
+
+```bash
+npm install
 ```
 
-## Assessments
+Run locally:
 
-### Assessment 1: Temp page
+```bash
+npm run dev
+```
 
-Temporary Page
+Build and deploy to GitHub Pages:
 
-- [View Page](pages/temp.html)
-
-
-## Technologies Used
-
-- HTML5
-- CSS3
-
-## How to View
-
-Visit the live site at: [https://ryderdprogrammer.github.io](https://ryderdprogrammer.github.io)
+```bash
+npm run deploy
+```
 
 ---
 
