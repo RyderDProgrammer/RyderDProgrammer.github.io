@@ -5,7 +5,7 @@ export function Home() {
     <div className={styles.home}>
       <h2>Welcome to my Portfolio</h2>
       <p>
-        This is the personal portfolio site of Ryder DeBack — a developer with experience in
+        This is the personal portfolio site of Ryder DeBack — I am a developer with experience in
         cloud support, software testing, and full-stack development. Browse around to learn more
         about my background and the projects I've worked on.
       </p>

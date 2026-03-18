@@ -15,7 +15,10 @@ export function Layout() {
         {windows.length === 0 ? <Home /> : <WindowContainer />}
       </main>
       <footer className={styles.footer}>
-        <p>&copy; 2026 Ryder DeBack</p>
+        <p>&copy; 2026 Ryder DeBack 
+        |  <a href="https://www.linkedin.com/in/ryder-deback/" target="_blank" rel="noreferrer" style={{ marginLeft: '6px' , marginRight: '6px'}}>LinkedIn</a>
+        |  <a href="https://github.com/RyderDProgrammer" target="_blank" rel="noreferrer" style={{ marginLeft: '6px' }}>GitHub</a>
+        </p>
       </footer>
       <Taskbar />
     </div>
