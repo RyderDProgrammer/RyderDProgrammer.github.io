@@ -14,11 +14,13 @@ export function ProjectDetail({ projectId }) {
 
       {project.description && <p className={styles.description}>{project.description}</p>}
 
-      <ul className={styles.bullets}>
-        {project.bullets.map((b) => (
-          <li key={b}>{b}</li>
-        ))}
-      </ul>
+      {project.bullets.length > 0 && (
+        <ul className={styles.bullets}>
+          {project.bullets.map((b) => (
+            <li key={b}>{b}</li>
+          ))}
+        </ul>
+      )}
 
       {project.images.length > 0 && (
         <div className={styles.images}>
@@ -33,14 +35,16 @@ export function ProjectDetail({ projectId }) {
         </div>
       )}
 
-      <a
-        href={project.githubUrl}
-        target="_blank"
-        rel="noreferrer"
-        className={styles.githubLink}
-      >
-        View on GitHub →
-      </a>
+      {project.githubUrl && (
+        <a
+          href={project.githubUrl}
+          target="_blank"
+          rel="noreferrer"
+          className={styles.githubLink}
+        >
+          View on GitHub
+        </a>
+      )}
     </div>
   );
 }

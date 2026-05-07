@@ -30,7 +30,7 @@ export function About() {
           </p>
 
           <p>
-            On the technical side, I'm comfortable across a range of languages and tools — Python,
+            On the technical side, I'm comfortable across a range of languages and tools: Python,
             JavaScript/TypeScript, Java, C#, and SQL are my most-used, and I've built projects with
             React, Node.js, Express, and ASP.NET Core. I also have experience with cloud and DevOps
             tooling through AWS and platforms like Vercel and GitHub Actions.
