@@ -27,3 +27,12 @@
 .content p {
   margin: 8px 0;
 }
+
+.resumeLink {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--page-text-color);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: calc(1.035rem + 3pt);
+}

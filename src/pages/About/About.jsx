@@ -42,6 +42,9 @@ export function About() {
           className={styles.headshot}
         />
       </div>
+      <a href="/Ryder DeBack Resume.pdf" download className={styles.resumeLink}>
+        Click on me to look at my resume!
+      </a>
     </div>
   );
 }
