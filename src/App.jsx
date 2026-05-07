@@ -15,6 +15,7 @@ function App() {
             <Route path="/about" element={null} />
             <Route path="/about-site" element={null} />
             <Route path="/projects" element={null} />
+            <Route path="/project/:id" element={null} />
           </Routes>
         </WindowProvider>
       </Router>

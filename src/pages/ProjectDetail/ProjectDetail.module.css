@@ -1,0 +1,49 @@
+.detail {
+  padding: 20px 0;
+  max-width: 800px;
+  color: var(--page-text-color);
+  text-shadow: var(--page-text-shadow);
+}
+
+.detail h2 {
+  margin: 0 0 12px;
+}
+
+.description {
+  margin: 0 0 16px;
+  line-height: 1.6;
+}
+
+.bullets {
+  padding-left: 20px;
+  margin: 0 0 24px;
+}
+
+.bullets li {
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.image {
+  max-width: 100%;
+  width: calc(50% - 8px);
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.githubLink {
+  color: var(--page-text-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.githubLink:hover {
+  opacity: 0.8;
+}

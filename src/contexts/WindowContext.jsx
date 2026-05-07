@@ -11,13 +11,18 @@ export function useWindows() {
   return context;
 }
 
-// Map routes to window titles
 const ROUTE_TITLES = {
   '/': 'Home',
   '/about': 'About Me',
   '/about-site': 'About the Site',
   '/projects': 'Projects',
 };
+
+function getRouteTitle(route) {
+  if (ROUTE_TITLES[route]) return ROUTE_TITLES[route];
+  if (route.startsWith('/project/')) return 'Project';
+  return 'Window';
+}
 
 export function WindowProvider({ children }) {
   const navigate = useNavigate();
@@ -73,7 +78,7 @@ export function WindowProvider({ children }) {
         const newWindow = {
           id: `${route}-${Date.now()}`,
           route,
-          title: title || ROUTE_TITLES[route] || 'Window',
+          title: title || getRouteTitle(route),
           zIndex: nextZIndex,
         };
 
@@ -90,7 +95,7 @@ export function WindowProvider({ children }) {
     if (!initialized) {
       const route = location.pathname;
       if (route !== '/' && windows.length === 0) {
-        const title = ROUTE_TITLES[route] || 'Window';
+        const title = getRouteTitle(route);
         openWindow(route, title);
       }
       setInitialized(true);

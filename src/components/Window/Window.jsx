@@ -3,9 +3,9 @@ import { Home } from '../../pages/Home/Home';
 import { About } from '../../pages/About/About';
 import { AboutSite } from '../../pages/AboutSite/AboutSite';
 import { Projects } from '../../pages/Projects/Projects';
+import { ProjectDetail } from '../../pages/ProjectDetail/ProjectDetail';
 import styles from './Window.module.css';
 
-// Map routes to components
 const ROUTE_COMPONENTS = {
   '/': Home,
   '/about': About,
@@ -27,7 +27,13 @@ export function Window({ id, route, title, zIndex, isActive }) {
     }
   };
 
-  const Component = ROUTE_COMPONENTS[route] || Home;
+  let Component = ROUTE_COMPONENTS[route];
+  let extraProps = {};
+  if (!Component && route.startsWith('/project/')) {
+    Component = ProjectDetail;
+    extraProps = { projectId: route.slice('/project/'.length) };
+  }
+  if (!Component) Component = Home;
 
   return (
     <div
@@ -44,7 +50,7 @@ export function Window({ id, route, title, zIndex, isActive }) {
         ✕
       </button>
       <div className={styles.content}>
-        <Component />
+        <Component {...extraProps} />
       </div>
     </div>
   );
