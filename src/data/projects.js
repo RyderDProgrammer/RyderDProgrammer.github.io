@@ -19,7 +19,7 @@ export const PROJECTS = [
       'Python project implementing search algorithms to solve a grid-based treasure hunt environment',
       'Covers multiple AI search strategies with modular algorithm and core components',
     ],
-    description: '',
+    description: 'Developed a grid-based AI treasure hunting simulation as a group project for TCSS 435, focused on applying and comparing a range of classical search algorithms within an interactive, visualized environment. The application allows users to generate randomized grid maps with treasures, traps, and walls, then run uninformed search algorithms (BFS, DFS, UCS), informed heuristic search (A*, Greedy BFS), or adversarial game-tree search (MiniMax, Alpha-Beta pruning) to navigate agents toward their goals. The project also incorporated a probabilistic Bayesian belief system with configurable sensor noise, allowing agents to reason under uncertainty by updating treasure location probabilities using Bayes\'s rule as they explore. Through this project, experience was gained in AI search algorithm implementation, adversarial game modeling, probabilistic reasoning, GUI development with Tkinter, and collaborative software development using Git.',
     images: [],
   },
   {
@@ -31,7 +31,7 @@ export const PROJECTS = [
       'Supports filtering and CRUD operations across actors, directors, and genres',
       'Optimized bulk database import from 13 hours down to under 3 minutes',
     ],
-    description: '',
+    description: 'Developed a RESTful web API for querying and managing a comprehensive movie database spanning three decades of cinema, designed to support entertainment applications, data analysis, and developer integrations. The API provides access to over 9,000 movies with rich metadata including cast, crew, financial data, ratings, and visual assets, enabling consumers to search, filter, sort, and paginate results through well-structured endpoints. The project emphasized clean API design, relational data modeling across movies, actors, directors, genres, and studios, and interactive documentation through Swagger UI. Through this project, experience was gained in backend development with Node.js, Express, and TypeScript, SQLite database design and querying, RESTful API architecture, fuzzy search and pagination patterns, and collaborative development using GitHub-based version control workflows.',
     images: [],
   },
   {
@@ -43,7 +43,7 @@ export const PROJECTS = [
       'Includes user authentication, search, watchlists, and full CRUD for movies and shows',
       'Deployed on Vercel with progressive feature rollout across multiple sprints',
     ],
-    description: '',
+    description: 'Developed a full-stack web application serving as the front-end interface for a media catalog and discovery platform, enabling users to browse, search, and manage movies and TV shows through a modern, responsive dashboard experience. The application provides authenticated access to a REST API backend, supporting full CRUD operations on media entries, paginated and searchable media browsing, detailed movie and TV show views, a personal watch list stored via local storage, and a role-aware user system with JWT-based authentication. The project emphasized clean component architecture, protected routing, and a polished Material UI design system. Through this project, experience was gained in Next.js 15 App Router patterns, TypeScript, token-based authentication with NextAuth, REST API integration using Axios, and collaborative version-controlled development using GitHub.',
     images: [],
   },
   {
@@ -67,7 +67,7 @@ export const PROJECTS = [
       'Handles appointment scheduling, pet/owner profiles, and service browsing',
       'Co-authored with Cheryl Rothlisberger; responsive design for mobile and desktop',
     ],
-    description: '',
+    description: 'Developed a full-stack web application for a pet grooming salon focused on improving customer interaction and appointment management through a modern, responsive website experience. The application allows users to browse salon services, view business information, and schedule appointments online while providing an intuitive and user-friendly interface. The project emphasized responsive web design, clean UI/UX implementation, and practical business functionality tailored to small business operations. Through this project, experience was gained in full-stack development, front-end design, backend integration, and GitHub-based version control workflows.',
     images: [],
   },
 ];

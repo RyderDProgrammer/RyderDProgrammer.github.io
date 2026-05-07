@@ -15,15 +15,6 @@
   font-size: 1.35rem;
 }
 
-.bullets {
-  padding-left: 20px;
-  margin: 0 0 24px;
-}
-
-.bullets li {
-  margin: 6px 0;
-  line-height: 1.5;
-}
 
 .images {
   display: flex;

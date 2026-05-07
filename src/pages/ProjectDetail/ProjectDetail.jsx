@@ -14,14 +14,6 @@ export function ProjectDetail({ projectId }) {
 
       {project.description && <p className={styles.description}>{project.description}</p>}
 
-      {project.bullets.length > 0 && (
-        <ul className={styles.bullets}>
-          {project.bullets.map((b) => (
-            <li key={b}>{b}</li>
-          ))}
-        </ul>
-      )}
-
       {project.images.length > 0 && (
         <div className={styles.images}>
           {project.images.map((src, i) => (
